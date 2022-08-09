@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }).then(res => res.json())
       .then(res => {
         savebtnDom.innerText = preSaveText
-        if (res == 'msupernova') {
+        if (res == 'root') {
           alert('Login Success')
           localStorage.setItem('SNPASS', pass)
           document.getElementById('login-wrap').classList.remove("show")
