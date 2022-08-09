@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "M Content Collector",
+    "name": "超新星文案采集器",
     "version": "1.0.0",
-    "description": "For collecting contents",
+    "description": "用于采集优秀网站文案并同步到超新星文案库",
     "short_name": "MCC",
     "background": {
         "page": "background.html",
@@ -22,7 +22,7 @@
       }
     ],
     "browser_action": {
-      "default_title": "Does a thing when you do a thing",
+      "default_title": "超新星文案采集器",
       "default_popup": "popup.html"
     }
 }
