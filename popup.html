@@ -1,0 +1,32 @@
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .content-collector {
+                width: 300px;
+                text-align: center;
+            }
+            #login-wrap, #logout-wrap {
+                display: none;
+            }
+            .show {
+                display: block!important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content-collector">
+            <div class="login-wrap show" id="login-wrap">
+                <h2>超新星文案采集器</h2>
+                <input id="pass" type="text" placeholder="请输入应用密码">
+                <button id="login">登录</button>
+            </div>
+            <div class="logout-wrap" id="logout-wrap">
+                <h2>超新星文案采集器</h2>
+                <p>已登录: 超新星</p>
+                <button id="logout">登出</button>
+            </div>
+        </div>
+    </body>
+    <script src="background.js"></script>
+</html>

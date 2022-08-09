@@ -1,0 +1,164 @@
+#m-content {
+    display: none;
+    width: 650px;
+    height: 500px;
+    background-color: white;
+    position: fixed; /*Can also be `fixed`*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+        /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    padding: 50px;
+    box-shadow: 10px 10px 5px 0px rgb(215 215 215 / 75%);
+    z-index: 999999999999;
+}
+
+.show-mcontent {
+    display: block!important;
+}
+
+.show-mcontent {
+    display: block!important;
+}
+
+#m-content textarea {
+    width: 90%;
+    height: auto;
+    min-height: 60px;
+}
+
+#m-content .formbuilder-textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#m-content .formbuilder-textarea-label {
+    width: 10%;
+}
+
+#m-content .formbuilder-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+#m-content .formbuilder-checkbox-group label {
+    width: 15%;
+}
+
+#m-content .checkbox-group {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#m-content .checkbox-group > div {
+    padding: 0 10px;
+}
+
+#m-content .labels-wrap {
+    display: flex;
+    padding: 10px 0;
+    padding-top: 0;
+}
+
+#m-content .label-item {
+    font-size: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+h2#control-5063100 {
+    text-align: center;
+}
+
+#m-content .labels-title {
+    line-height: 1;
+}
+
+
+#m-content input {-webkit-appearance: radio!important;}
+#m-content label {
+    /* width: auto!important; */
+    display: inline!important;
+    color: #3c4043!important;
+}
+#m-content input {
+    height: auto!important;
+    display: inline!important;
+    width: auto!important;
+}
+
+#m-content label.formbuilder-checkbox-group-label {
+	padding-bottom: 0!important;
+	font-size: 16px!important;
+	font-weight: 400;!important
+	height: 28px!important;
+	line-height: 28px!important;
+	color: #3c4043!important;
+}
+
+#m-content {font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;font-weight: 400;font-size: 1rem;line-height: 1.75;text-rendering: optimizeSpeed;color: #3c4043!important;padding: 25px!important;}
+
+#m-content textarea {
+    padding: 2px!important;
+}
+
+#m-content #control-5063100 {
+    margin-bottom: 10px!important;
+}
+
+#m-content .formbuilder-textarea {
+    width: 100%!important;
+}
+
+#m-content .formbuilder-textarea-label {
+    width: 10%!important;
+}
+#m-content .formbuilder-checkbox-group label {
+    width: 15%!important;
+}
+#m-content .formbuilder-checkbox-inline {
+    margin-bottom: 5px!important;
+}
+#m-content .m-collector-close, #m-content .m-collector-save {
+    padding: 10px 20px!important;
+    display: inline-block!important;
+    cursor: pointer!important;
+    border: none!important;
+    background: #2a7de2!important;
+    border-radius: 40px!important;
+    box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 13%)!important;
+    text-transform: uppercase!important;
+    letter-spacing: 1px!important;
+    color: #fff!important;
+    font-size: 16px!important;
+    transition: all .5s!important;
+}
+#m-content .m-collector-close:hover, #m-content .m-collector-save:hover {
+    background-color: #338fff!important;
+}
+#m-content .m-collector-cta-wrap {
+    text-align: center!important;
+}
+#m-content {
+    border: 3px dotted #1a73e8;
+    padding-top: 0px!important;
+}
+#m-content h2#control-5063100 {
+    font-size: 24px!important;
+    font-weight: 700!important;
+    margin: 0 auto!important;
+    padding: 15px 0 0 0!important;
+}
+#m-content .labels-title {
+    text-align: left!important;
+}
