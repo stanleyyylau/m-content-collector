@@ -1,13 +1,5 @@
+// Config and global function
 let PASSFROMCACHE = ''
-
-
-chrome.extension.onMessage.addListener(function (msg, sender, sendResponse) {
-    const selectionText = msg.selectionText 
-    PASSFROMCACHE = msg.pass
-    mContentApp.showDialog(selectionText)
-
-});
-
 const ENV = 'prod'
 const ENDPOINTROOT = ENV === 'prod' ? 'https://copywrite.msupernova.com' : 'https://copywrite.local'
 const LOCALPASS = 'agk0 XTxE 8Wjh inQq uCsB LCpH'
@@ -65,10 +57,15 @@ function replaceSelectedText(el, text) {
     el.value = val.slice(0, sel.start) + text + val.slice(sel.end);
 }
 
-// var el = document.getElementById("your_textarea");
-// replaceSelectedText(el, "[NEW TEXT]");
+// Listen for background script
+chrome.extension.onMessage.addListener(function (msg, sender, sendResponse) {
+    const selectionText = msg.selectionText 
+    PASSFROMCACHE = msg.pass
+    mContentApp.showDialog(selectionText)
 
+});
 
+// Main Logic
 const mContentApp = {
     isInit: false,
     htmlToElement(html) {
